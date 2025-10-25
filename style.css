@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Design Tokens */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
+  --text-color: #333;
+  --background-color: #f8f9fa;
+  --container-padding: 1rem;
+  --font-family: 'Roboto', sans-serif;
+  --font-size-base: 16px;
+  --font-weight-bold: 700;
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--container-padding);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: var(--container-padding);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: var(--container-padding);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Dashboard Styles */
+#dashboard {
+  flex: 1;
+  padding: 2rem;
+}
+
+#paymentSummary {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+#totalBalance {
+  font-weight: var(--font-weight-bold);
+}
+
+#recentPayments ul {
+  list-style: none;
+  padding: 0;
+}
+
+#recentPayments li {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Properties, Renters, Reports Styles */
+#properties, #renters, #reports {
+  flex: 1;
+  padding: 2rem;
+}
+
+#propertyTableContainer, #renterTableContainer {
+  margin-top: 1rem;
+}
+
+#addPropertyButton, #addRenterButton {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Font Links */
+/* Add your font links here */
